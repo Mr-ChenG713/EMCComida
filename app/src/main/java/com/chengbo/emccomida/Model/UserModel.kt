@@ -1,4 +1,4 @@
-package com.chengbo.emccomida.model
+package com.chengbo.emccomida.Model
 
 class UserModel {
 
@@ -9,6 +9,5 @@ class UserModel {
     var mail:String?=null
     var telemovel:String?=null
 
-
-
+    constructor()
 }

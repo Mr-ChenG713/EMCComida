@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.LoginActivity">
+    tools:context=".Activity.LoginActivity">
 
 
     <LinearLayout
@@ -88,6 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:onClick="abrirRegisto"
             android:text="Criar nova conta"
             android:textColor="#3F51B5"
             android:textStyle="bold" />
