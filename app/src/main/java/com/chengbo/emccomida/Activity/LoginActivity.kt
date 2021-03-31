@@ -30,7 +30,8 @@ class LoginActivity : AppCompatActivity() {
 
         btn_login.setOnClickListener {
 
-            login()
+            //login()
+            abrirNavigation()
         }
 
     }

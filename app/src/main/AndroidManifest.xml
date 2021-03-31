@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.HomePanel_BottomNavigation"></activity>
+        <activity android:name=".NavigationPanel.ProfileFragment"></activity>
+        <activity android:name=".NavigationPanel.PendenteEMCFragment" />
+        <activity android:name=".NavigationPanel.EcomendaFragment" />
+        <activity android:name=".NavigationPanel.HomeFragment" />
+        <activity android:name=".Activity.HomePanel_BottomNavigation" />
         <activity
             android:name=".Activity.RecuPasswordActivity"
-            android:theme="@style/AppThemeNoActionbar"/>
+            android:theme="@style/AppThemeNoActionbar" />
         <activity
             android:name=".Activity.RegisterActivity"
             android:theme="@style/AppThemeNoActionbar" />
