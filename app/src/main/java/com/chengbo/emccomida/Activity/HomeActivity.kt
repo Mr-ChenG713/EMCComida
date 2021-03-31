@@ -15,8 +15,25 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        var btnlogin = findViewById<Button>(R.id.btn_main_login)
+        var btnregister = findViewById<Button>(R.id.btn_main_registar)
+
+        btnlogin.setOnClickListener {
+
+            val intentLogin = Intent(this@HomeActivity, LoginActivity::class.java)
+            startActivity(intentLogin)
+            finish()
+        }
+
+        btnregister.setOnClickListener {
+
+            val intentRegister = Intent(this@HomeActivity, RegisterActivity::class.java)
+            startActivity(intentRegister)
+            finish()
+        }
 
 
     }
+
 
 }
