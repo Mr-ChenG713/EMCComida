@@ -15,33 +15,8 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        //toolBar
 
-        //toolBar
-        var toolbar = findViewById<Toolbar>(R.id.toolbar)
-        setSupportActionBar(toolbar)
-        supportActionBar!!.title = "EMCComida"
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-
-        var btnlogout = findViewById<Button>(R.id.btn_logout)
-
-        btnlogout.setOnClickListener {
-
-            logout()
-        }
 
     }
 
-    private fun logout (){
-
-        Firebase.auth.signOut()
-        voltarLogin()
-    }
-
-    private fun voltarLogin(){
-
-        val intent = Intent(this@HomeActivity, LoginActivity::class.java)
-        startActivity(intent)
-        finish()
-    }
 }
