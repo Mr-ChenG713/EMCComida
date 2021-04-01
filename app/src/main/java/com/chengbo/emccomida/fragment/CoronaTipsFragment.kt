@@ -1,4 +1,6 @@
 package com.chengbo.emccomida.fragment
 
-class CoronaTipsFragment {
+import androidx.fragment.app.Fragment
+
+class CoronaTipsFragment: Fragment() {
 }
