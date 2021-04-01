@@ -27,4 +27,6 @@ class User {
         this.codigopostal = codigopostal
         this.cidade = cidade
     }
+
+    constructor()
 }

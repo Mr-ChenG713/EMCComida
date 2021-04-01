@@ -71,6 +71,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif"
                 android:gravity="right"
+                android:onClick="abrirRecuPass"
                 android:text="Esqueceu-se Password"
                 android:textColor="#673AB7"
                 android:textStyle="bold" />
@@ -90,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:gravity="right|left"
+                android:onClick="abrirRegistPage"
                 android:text="Não há conta? Registar"
                 android:textColor="#3F51B5"
                 android:textStyle="bold" />
