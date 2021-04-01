@@ -1,6 +1,7 @@
 package com.chengbo.emccomida.Activity
 
 import android.os.Bundle
+import android.text.Layout
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -22,6 +23,7 @@ class HomePanel_BottomNavigation : AppCompatActivity(),
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         var fragment: Fragment? = null
+        var layout: Layout? = null
         when (item.getItemId()) {
             R.id.ResHome -> fragment = HomeFragment()
             R.id.ResPedPendente -> fragment = PendenteEMCFragment()

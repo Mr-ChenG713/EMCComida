@@ -8,7 +8,6 @@ class Prato {
     var Preco:String?=null
     var Descricao:String?=null
     var ImageURL:String?=null
-    var Restauranteid:String?=null
 
     constructor()
     constructor(
@@ -18,7 +17,6 @@ class Prato {
         Preco: String?,
         Descricao: String?,
         ImageURL: String?,
-        Restauranteid: String?
     ) {
         this.id = id
         this.Nome = Nome
@@ -26,6 +24,5 @@ class Prato {
         this.Preco = Preco
         this.Descricao = Descricao
         this.ImageURL = ImageURL
-        this.Restauranteid = Restauranteid
     }
 }
