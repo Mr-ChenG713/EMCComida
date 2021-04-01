@@ -18,7 +18,7 @@
             android:fontFamily="@font/rock_salt"
             android:text="AppEMCComida"
             android:textColor="#FFFFFF"
-            android:textSize="36sp"
+            android:textSize="30sp"
             android:textStyle="bold|italic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

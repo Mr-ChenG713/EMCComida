@@ -30,14 +30,14 @@ class LoginActivity : AppCompatActivity() {
 
         btn_login.setOnClickListener {
 
-            //login()
-            abrirNavigation()
+            login()
+            //abrirNavigation()
         }
 
     }
 
     // Verfificar se tem sessao iniciada
-   /* public override fun onStart() {
+   public override fun onStart() {
 
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -45,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
         if(currentUser != null){
             abrirNavigation();
         }
-    }*/
+    }
 
     private fun login (){
 
@@ -61,6 +61,7 @@ class LoginActivity : AppCompatActivity() {
                 if (it.isSuccessful){
 
                     val currentUser = auth.currentUser
+                    Toast.makeText(this@LoginActivity, "Bem-Vindo !!!", Toast.LENGTH_SHORT).show()
                     abrirNavigation()
                 } else{
 

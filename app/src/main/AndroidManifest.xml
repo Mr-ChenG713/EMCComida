@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.chengbo.emccomida">
 
     <application
@@ -9,9 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NavigationPanel.ProfileFragment"></activity>
+        <activity android:name=".NavigationPanel.InfoFragment"></activity>
+        <activity android:name=".NavigationPanel.AdcionarPrato" />
+        <activity android:name=".NavigationPanel.ProfileFragment" />
         <activity android:name=".NavigationPanel.PendenteEMCFragment" />
-        <activity android:name=".NavigationPanel.EcomendaFragment" />
+        <activity
+            android:name=".NavigationPanel.EcomendaFragment"
+            tools:ignore="Instantiatable" />
         <activity android:name=".NavigationPanel.HomeFragment" />
         <activity android:name=".Activity.HomePanel_BottomNavigation" />
         <activity

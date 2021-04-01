@@ -23,4 +23,9 @@
         android:icon="@drawable/ic_baseline_dis_24"
         android:title="Adicionar Menu" />
 
+    <item
+        android:id="@+id/Resinfo"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="Mais Informções" />
+
 </menu>

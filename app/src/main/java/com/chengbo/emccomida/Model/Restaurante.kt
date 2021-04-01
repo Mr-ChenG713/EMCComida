@@ -1,6 +1,6 @@
 package com.chengbo.emccomida.Model
 
-class RestauranteModel {
+class Restaurante {
 
     var uid:String?=null
     var nome:String?=null

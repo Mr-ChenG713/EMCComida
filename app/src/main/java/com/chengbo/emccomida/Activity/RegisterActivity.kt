@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.chengbo.emccomida.Model.RestauranteModel
+import com.chengbo.emccomida.Model.Restaurante
 import com.chengbo.emccomida.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -66,7 +66,7 @@ class RegisterActivity : AppCompatActivity() {
 
                     val currentUser = auth.currentUser
                     //val currentUserdb = databaseReference.child(currentUser?.uid!!)
-                    val restauranteModel = RestauranteModel()
+                    val restauranteModel = Restaurante()
                     if (currentUser != null) {
                         restauranteModel.uid = currentUser.uid
                     }
