@@ -1,4 +1,4 @@
-package com.chengbo.emccomida.Model
+package com.chengbo.emccomida.model
 
 class User {
 

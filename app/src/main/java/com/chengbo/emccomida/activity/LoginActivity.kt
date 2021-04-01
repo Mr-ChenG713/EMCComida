@@ -1,4 +1,4 @@
-package com.chengbo.emccomida.Activity
+package com.chengbo.emccomida.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +10,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.chengbo.emccomida.R
-import com.chengbo.emccomida.Utils.Common
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -30,8 +29,8 @@ class LoginActivity : AppCompatActivity() {
 
         btn_login.setOnClickListener {
 
-            login()
-            //abrirNavigation()
+            //login()
+            abrirHome()
         }
     }
 

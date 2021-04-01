@@ -10,13 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.HomeActivity"></activity>
-        <activity android:name=".Activity.RecupPassActivity"
+        <activity android:name=".activity.HomeActivity"></activity>
+        <activity android:name=".activity.RecupPassActivity"
             android:theme="@style/AppThemeNoActionbar"/>
-        <activity android:name=".Activity.RegisterActivity"
+        <activity android:name=".activity.RegisterActivity"
             android:theme="@style/AppThemeNoActionbar"/>
         <activity
-            android:name=".Activity.LoginActivity"
+            android:name=".activity.LoginActivity"
             android:theme="@style/AppThemeNoActionbar" />
         <activity
             android:name=".SplashScreenActivity"

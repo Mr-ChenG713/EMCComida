@@ -1,4 +1,4 @@
-package com.chengbo.emccomida.Activity
+package com.chengbo.emccomida.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,7 +8,7 @@ import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.chengbo.emccomida.Model.User
+import com.chengbo.emccomida.model.User
 import com.chengbo.emccomida.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth

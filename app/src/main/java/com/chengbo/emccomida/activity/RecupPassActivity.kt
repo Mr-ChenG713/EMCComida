@@ -1,4 +1,4 @@
-package com.chengbo.emccomida.Activity
+package com.chengbo.emccomida.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
