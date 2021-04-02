@@ -19,6 +19,7 @@
         android:id="@+id/btn_encom_pendente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="abrirEmcPendnete"
         android:text="Encomenda Pendente" />
 
 
@@ -26,6 +27,7 @@
         android:id="@+id/btn_encomenda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="abrirncomenda"
         android:text="Encomenda" />
 
 
@@ -33,6 +35,7 @@
         android:id="@+id/btn_prefile_resta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="abrirPrefil"
         android:text="Prefil" />
 
 

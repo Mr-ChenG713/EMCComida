@@ -24,4 +24,23 @@ class HomeActivity : AppCompatActivity(){
         val intent = Intent(this@HomeActivity, PratoActivity::class.java)
         startActivity(intent)
     }
+
+    fun abrirEmcPendnete (view: View){
+
+        val intent = Intent(this@HomeActivity, EmcPendenteActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun abrirncomenda (view: View){
+
+        val intent = Intent(this@HomeActivity, EncomendaActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun abrirPrefil (view: View){
+
+        val intent = Intent(this@HomeActivity, PrefilActivity::class.java)
+        startActivity(intent)
+    }
+
 }

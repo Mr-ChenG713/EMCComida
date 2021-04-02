@@ -10,8 +10,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.InserirPratoActivity"></activity>
-        <activity android:name=".activity.PratoActivity" />
+        <activity android:name=".activity.PrefilActivity"
+            android:parentActivityName=".activity.HomeActivity"></activity>
+        <activity
+            android:name=".activity.EncomendaActivity"
+            android:parentActivityName=".activity.HomeActivity" />
+        <activity
+            android:name=".activity.EmcPendenteActivity"
+            android:parentActivityName=".activity.HomeActivity" />
+        <activity
+            android:name=".activity.InserirPratoActivity"
+            android:parentActivityName=".activity.PratoActivity" />
+        <activity
+            android:name=".activity.PratoActivity"
+            android:parentActivityName=".activity.HomeActivity" />
         <activity android:name=".activity.HomeActivity" />
         <activity
             android:name=".activity.RecupPassActivity"
