@@ -18,7 +18,7 @@ class HomeActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
     }
-
+ 
     fun abrirPrato (view: View){
 
         val intent = Intent(this@HomeActivity, PratoActivity::class.java)
