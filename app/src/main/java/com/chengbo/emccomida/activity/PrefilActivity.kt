@@ -3,12 +3,17 @@ package com.chengbo.emccomida.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.chengbo.emccomida.R
+import com.chengbo.emccomida.model.Pratos
 import com.chengbo.emccomida.model.Restaurantes
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.update_prato.view.*
 
 class PrefilActivity : AppCompatActivity() {
 
@@ -64,8 +69,9 @@ class PrefilActivity : AppCompatActivity() {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+                Log.w("TAG", "Failed to read value.", error.toException())
             }
         })
     }
+    
 }
