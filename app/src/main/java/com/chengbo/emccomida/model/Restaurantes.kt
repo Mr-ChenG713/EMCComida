@@ -1,6 +1,6 @@
 package com.chengbo.emccomida.model
 
-class User {
+class Restaurantes {
 
     lateinit var uid: String
     lateinit var nome: String

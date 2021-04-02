@@ -1,45 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.HomeActivity"
-    android:id="@+id/drawerLayout">
+    android:orientation="vertical">
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    <Button
+        android:id="@+id/btn_prato"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/coordinatorLayout">
-        <com.google.android.material.appbar.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark"
-            android:elevation="1dp">
-            <androidx.appcompat.widget.Toolbar
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minHeight="?attr/actionBarSize"
-                android:background="@color/colorPrimary"
-                android:id="@+id/toolbar"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark"
-                app:layout_scrollFlags="scroll|enterAlways"/>
-        </com.google.android.material.appbar.AppBarLayout>
+        android:layout_height="wrap_content"
+        android:onClick="abrirPrato"
+        android:text="Prato" />
 
-        <FrameLayout
-            android:id="@+id/frameLayout"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigationView"
+    <Button
+        android:id="@+id/btn_encom_pendente"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:headerLayout="@layout/drawer_header"
-        app:menu="@menu/menu_drawer"
-        android:layout_gravity="start"/>
+        android:layout_height="wrap_content"
+        android:text="Encomenda Pendente" />
 
-</androidx.drawerlayout.widget.DrawerLayout>
+
+    <Button
+        android:id="@+id/btn_encomenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Encomenda" />
+
+
+    <Button
+        android:id="@+id/btn_prefile_resta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prefil" />
+
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sair" />
+
+
+</LinearLayout>

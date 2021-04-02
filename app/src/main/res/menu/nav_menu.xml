@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group >
+        <item
+            android:id="@+id/home"
+            android:title="Inicio"
+            android:icon="@drawable/ic_baseline_home_24"/>
+
+        <item
+            android:id="@+id/prato"
+            android:title="Prato"
+            android:icon="@drawable/ic_baseline_dis_24"/>
+
+        <item
+            android:id="@+id/encopendnete"
+            android:title="Encomenda pendente"
+            android:icon="@drawable/ic_baseline_pending_actions_24"/>
+        <item
+            android:id="@+id/encomenda"
+            android:title="Encomenda"
+            android:icon="@drawable/ic_baseline_assignment_24"/>
+    </group>
+
+    <item android:title="Utilizador">
+        <menu>
+        <item
+            android:id="@+id/myProflie"
+            android:title="Prefil"
+            android:icon="@drawable/ic_baseline_person_24"/>
+        <item
+            android:id="@+id/logOut"
+            android:title="Sair"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"/>
+        </menu>
+    </item>
+
+
+</menu>

@@ -8,7 +8,7 @@ import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.chengbo.emccomida.model.User
+import com.chengbo.emccomida.model.Restaurantes
 import com.chengbo.emccomida.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -30,7 +30,7 @@ class RegisterActivity : AppCompatActivity() {
         //Iniciar Firebase
         auth = Firebase.auth
         database = FirebaseDatabase.getInstance()
-        databaseReference = database!!.reference.child("User")
+        databaseReference = database!!.reference.child("Restaurantes")
 
         var btn_registar = findViewById<Button>(R.id.btn_reg_user)
         var btn_voltar_login = findViewById<Button>(R.id.btn_reg_go_login)
@@ -64,19 +64,19 @@ class RegisterActivity : AppCompatActivity() {
                 if (it.isSuccessful){
 
                     val currentUser = auth.currentUser
-                    val user = User()
+                    val restaurante = Restaurantes()
 
                     if (currentUser != null) {
-                        user.uid = currentUser.uid.toString()
+                        restaurante.uid = currentUser.uid.toString()
                     }
-                    user.nome = edit_nome.text.toString()
-                    user.mail = edit_email.text.toString()
-                    user.contatotele = edit_tele.text.toString()
-                    user.morada = edit_morada.text.toString()
-                    user.codigopostal = edit_cp.text.toString()
-                    user.cidade = edit_cidade.text.toString()
+                    restaurante.nome = edit_nome.text.toString()
+                    restaurante.mail = edit_email.text.toString()
+                    restaurante.contatotele = edit_tele.text.toString()
+                    restaurante.morada = edit_morada.text.toString()
+                    restaurante.codigopostal = edit_cp.text.toString()
+                    restaurante.cidade = edit_cidade.text.toString()
 
-                    user.uid?.let { it -> databaseReference?.child(it)?.setValue(user) }
+                    restaurante.uid?.let { it -> databaseReference?.child(it)?.setValue(restaurante) }
                     Toast.makeText(this@RegisterActivity, "Registo com Sucesso", Toast.LENGTH_SHORT).show()
                     irPaginaLogin()
                 }else{
@@ -100,7 +100,7 @@ class RegisterActivity : AppCompatActivity() {
         var edit_cidade = findViewById<EditText>(R.id.user_cidade)
 
         if (TextUtils.isEmpty(edit_nome.text.toString())){
-            edit_nome.setError("Introduza o nome de Restaurante")
+            edit_nome.setError("Introduza o nome de Restaurantes")
             edit_nome.requestFocus()
             valido = false
         }else if (!isValidEmail(edit_email.text.toString())){

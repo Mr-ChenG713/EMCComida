@@ -29,8 +29,8 @@ class LoginActivity : AppCompatActivity() {
 
         btn_login.setOnClickListener {
 
-            //login()
-            abrirHome()
+            login()
+            //abrirHome()
         }
     }
 
